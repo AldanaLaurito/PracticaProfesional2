@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     <title>Formulario de Registro</title>
 </head>
 <body>
+<h2>Formulario de Registro</h2>
+<div class="modal-body" id="create-modal-body">
+    <form id="create-client-form" name="frm" >
+        <div class="form-group" id="create-client-form-group" onsubmit="return false">
+            Nombre y Apellido:<br>
+            <input type="text" name="nombre">
+            <br>
+            Teléfono:<br>
+            <input type="tel" name="telefono">
+            <br>
+            Correo Electrónico:<br>
+            <input type="email" name="mail">
+            <br>
+            <br>
+            Contraseña:<br>
+            <input type="password" name="password">
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary" id="crear-usuario">Guardar</button>
+        </div>
+    </form>
+    <button type="submit" class="btn btn-warning" id="volver-index">Volver a Inicio</button>
 
+</div>
+</div>
 </body>
 </html>
